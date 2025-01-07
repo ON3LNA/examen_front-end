@@ -1,0 +1,41 @@
+/*Dit zorgt ervoor dat er smooth over de website wordt gescrold.*/
+
+* /*alles selecteren*/ {
+    scroll-behavior: smooth;
+}
+
+body /*alles hier in wordt toegepast op de volledige body*/ {
+    background-color: rgb(252, 212, 246);
+}
+
+
+/* Opmaak van de header */
+header ul {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    list-style: none;
+    justify-content: center;
+    font-style: italic;
+    text-decoration: none;
+    align-items: center;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+header ul a{
+    color: rgb(55, 55, 114);
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.active a {
+    color: rgb(108, 100, 228);
+  }
+
+/* footer centreren */
+#footer {
+    display: flex;
+    justify-content: center;
+}

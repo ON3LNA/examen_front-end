@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Uitleg JavaScript</title>
+</head>
+<body>
+    <header id="header">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="html.html">Uitleg HTML</a></li>
+            <li><a href="css.html">Uitleg CSS</a></li>
+            <li class="active"><a href="javascript.html">Uitleg Javascript</a></li>
+            <li><a href="index.html">Extra</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <h2 id="UitlegJS">Uitleg JavaScript</h2>
+        <ul>
+            <li>"Defer" toevoegen helpt de website het JS tegoei uit te voeren. Defer zorgt er voor dat het script pas zordt uitgevoerd wanneer de hele pagina geladen is.</li>
+            <li>&lt;script src="file.js" defer&gt;&lt;/script&gt; - in &lt;head&gt; linken van de .html file.</li>
+            <li>Volgorde van importeren is belangrijk. <em>bv: functies oproemen uit farm.js die gedifiniëerd staan in dom.js.</em></li>
+        </ul>
+
+        <h3 class="uitleg">Wat?</h3>
+            <ul>
+                <li>Cross-platvorm programmeer taal.</li>
+                <li>Supported bij alle browsers.</li>
+                <li>Client-side</li>
+                    <ul>
+                        <li>in browser</li>
+                        <li>makes websites interactive: animaties, clicking on HTML elements...</li>
+                        <li>DOM <strong>Document Object Model</strong></li>
+                        <li>Fetch data from a server to display to users</li>
+                    </ul>
+                <li>Server-side</li>
+                    <ul>
+                        <li>Stand-alone, zonder een browser. (with a library bv <strong>NodeJS</strong>)</li>
+                        <li>Develp a back-end app (databse queries, file manipulation,...)</li>
+                    </ul>
+            </ul>
+
+        <h3 class="uitleg">Variables</h3>
+            <p>Declaring & Assigning:</p>
+                <ul>
+                    <li>let myName = 'John'; <em>"zo moet de input van myName er uit zien."</em></li>
+                    <li>myName = 'Lana';</li>
+                    <li>let myAge = 45; <em>"zo moet de input van myAge er uit zien."</em></li>
+                    <li>myAge = 19;</li>
+                </ul>
+            <p>Constants</p>
+                <ul>
+                    <li>Kan geen nieuwe value krijgen == een constante waarde.</li>
+                        <ul>
+                            <li>const myName = 'John';</li>
+                            <li>myName = "Lana"; ==> <strong>error</strong></li>
+                        </ul>
+                    <li>Liever <em>const</em> gebruiken dan <em>let</em> --&gt; resultaat is een mooiere code. <em>je can datatypes in JS veranderen met een nieuwe assignment, kan dus onverwachte resultaten geven.</em></li>
+                </ul>
+        <h3 class="uitleg">Datatypes</h3>
+            <p>Varible types</p>
+                <ul>
+                    <li>let myName = 'John';                        <em>string</em></li>
+                    <li>let myAge = 45;                             <em>number (int & floats)</em></li>
+                    <li>let isOld = False;                          <em>boolean</em></li>
+                    <li>let childeren = ['Tim', 'Suzy']             <em>array</em></li>
+                    <li>let identity = {name: 'John', age: 45}      <em>object</em></li>
+                </ul>
+        <h3 class="uitleg">Operators & conditionals</h3>
+            <p>Arithmetic</p>
+                <ul>
+                    <li>optellen = +</li>
+                    <li>delen = /</li>
+                    <li>modulo = %</li>
+                    <li>machten = **</li>
+                </ul>
+
+
+    </main>
+
+    <footer id="footer">
+        <p><em>Lana Maes   -  Examen Front-end Develpment   -   Januari</p>
+    </footer>
+</body>
+</html>

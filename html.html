@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Uitleg html</title>
+</head>
+<body>
+    <header id="header">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="html.html">Uitleg HTML</a></li>
+            <li><a href="css.html">Uitleg CSS</a></li>
+            <li><a href="javascript.html">Uitleg Javascript</a></li>
+            <li><a href="index.html">Extra</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <h2 id="UitlegHTML">Uitleg HTML</h2>
+            <h3 class="elementen">Elementen</h3>
+                <ul>
+                    <li>&lt;h1&gt; - &lt;h2&gt; - &lt;h3&gt; - ... elementen kun je gebruiken voor titels.</li>
+                    <li>het &lt;p&gt; element wordt gebruikt voor paragraaf elementen.</li>
+                    <li><em>&lt;em&gt;</em> elementen worden gebruikt om iets te beklemtonen teskt wordt schuin weer gegeven.</li>
+                    <li>Elementen kunnen vetgedrukt worden met het <strong>&lt;strong&gt;</strong> element.</li>
+                    <li>&lt;img scr="" alt=""&gt; opbouw voor foto toe te voegen</li>
+                    <li>&lt;a href=""&gt;link naar andere website&lt;/a&gt; , ander gedeelte van de website...</li>
+                    <li>Alles in &lt;body&gt; wordt weergegeven op de websitepagina</li>
+                    <li>Opbouw van een website gebeurd in dit formaat: header - main - footer</li>
+                    <li>Commentaar schrijven in HTML kan met behulp van "&lt;!-- --&gt;"</li>
+                    <li>Elementen worden opgebouwd door ze te openen <em>"&lt; open &gt;"</em> <em>"&lt;sluiten /&gt;"</em></li>
+                    <li><time datetime="2025-01-07">7 januari</time> <a href="datetime.html">&lt;time datetime="YYYY-MM-DD"&gt;DD MM&lt;/time&gt;</a> opbouwing.</li>
+                </ul>
+
+        <h3 class="index.html">index.html</h3>
+            <p><strong>index.html zonder hoofdletter!</strong></p>
+            <ul>
+                <li>&lt;!DOCTYPE html&gt; //Zegt aan browser welk document type de rest van het document is.//</li>
+                <li>&lt;html lang="nl"&gt; //taal - veranderen naar de taal dat je op je website gebruikt. Standaard "en" dus op letten//</li>
+                <li>&lt;head&gt; bevattend: 
+                    <ul>
+                        <li><em> &lt;meta charset="UTF-8"&gt;</li>
+                        <li> &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</li>
+                        <li>&lt;title&gt;Document&lt; /title&gt;</em></li>
+                        <li><em>&lt; link rel="stylesheet" href="file.css"&gt;</em> //Opbouwing link voor CSS bestand.// </li>
+                        <li><em>&lt;script src="file.js" defer&gt;&lt;/script&gt;</em> //Opbouwing link voor JavaScript bestand.//</li>
+                        <li> &lt;/head&gt; als sluiting</li>
+                    </ul>
+                </li>
+            </ul>                
+
+            <p>Alles binnen het body gedeelte wordt weergegeven op de pagina. We gebruiken <em>&lt;body&gt;</em> als opening en <em>&lt;/body&gt;</em> als sluiting.</p>              
+            <p>Om ons html bestand te sluiten gebruiken we <em>&lt;/html&gt;</em></p>
+
+        <h3 class="lijsten">Lijsten</h3>
+            <p>Er zijn verschillende elementen om een opsomming te maken:</p>
+                <ul>
+                    <li>&lt;ul&gt; <em>unorderd list</em></li>
+                        <ul>
+                            <li>volgorde onbelangrijk</li>
+                            <li>Binnen deze lijst wordt het element &lt;li&gt; toegevoegd.</li>
+                        </ul>
+                    <li>&lt;ol&gt; <em>ordend list</em></li>
+                        <ul>
+                            <li>Volgorde belangrijk</li>
+                            <li>Binnen deze lijst wordt het element &lt;li&gt; toegevoegd.</li>
+                        </ul>
+                    <li>&lt;dl&gt; <em>discription list</em></li>
+                        <ul>
+                            <dt>Binnen deze lijst wordt het element &lt;dt&gt; toegevoegd.</dt>
+                        </ul>
+                </ul>
+
+        <h3 class="form">From</h3>
+            <p>Met een "From" element kunnen we een formulier maken op onze website. Later wordt het met backend mogelijk om hier informatie van op te slaan.</p>
+            
+            
+
+    </main>
+
+    <footer id="footer">
+        <p><em>Lana Maes   -  Examen Front-end Develpment   -   Januari</p>
+    </footer>
+</body>
+</html>
