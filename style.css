@@ -5,7 +5,10 @@
 }
 
 body /*alles hier in wordt toegepast op de volledige body*/ {
-    background-color: rgb(252, 212, 246);
+    background-color: rgb(206, 215, 255);
+    font-size: 18px;
+    /* display: flex; */
+
 }
 
 
