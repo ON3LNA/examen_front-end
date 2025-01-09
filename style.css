@@ -6,9 +6,10 @@
 
 body /*alles hier in wordt toegepast op de volledige body*/ {
     background-color: rgb(206, 215, 255);
+    color: black; /*Dit maakt de tekst kleur zwart. */
+    text-decoration: none; /*Dit zorgt ervoor dat er geen tekst underlined is of van die dingen*/
     font-size: 18px;
-    /* display: flex; */
-
+    font-family: sans-serif;
 }
 
 
@@ -33,12 +34,40 @@ header ul a{
     text-decoration: none;
 }
 
+/* Dit zorgt ervoor dat de tekst van de huidige pagina gekleurd is in de header. */
 .active a {
     color: rgb(108, 100, 228);
-  }
+}
 
 /* footer centreren */
 #footer {
     display: flex;
     justify-content: center;
 }
+
+/* Dit gaat alle tekst in main declareren. */
+main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding: 30px;
+    border:  3px solid rgb(136, 117, 161);
+    border-radius: 25px;
+    overflow: auto;
+}
+
+/* Hiermee worden alle foto's op de website aangepast naar verlangen. */
+.foto {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* Content voor index.html */
+
+
+/* Content voor html.html */
+
+/* Content voor css.html */
