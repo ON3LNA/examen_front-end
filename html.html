@@ -8,18 +8,21 @@
 </head>
 <body>
     <header id="header">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="html.html">Uitleg HTML</a></li>
-            <li><a href="css.html">Uitleg CSS</a></li>
-            <li><a href="javascript.html">Uitleg Javascript</a></li>
-            <li><a href="extra.html">Extra</a></li>
-        </ul>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="html.html">Uitleg HTML</a></li>
+                <li><a href="css.html">Uitleg CSS</a></li>
+                <li><a href="javascript.html">Uitleg Javascript</a></li>
+                <li><a href="extra.html">Extra</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <h2 id="UitlegHTML">Uitleg HTML</h2>
-            <h3 class="elementen">Elementen</h3>
+        <article class="elementen">
+            <h3>(tekst-)Elementen</h3>
                 <ul>
                     <li>&lt;h1&gt; - &lt;h2&gt; - &lt;h3&gt; - ... elementen kun je gebruiken voor titels.</li>
                     <li>het &lt;p&gt; element wordt gebruikt voor paragraaf elementen.</li>
@@ -34,7 +37,7 @@
                     <li><time datetime="2025-01-07">7 januari</time> <a href="datetime.html">&lt;time datetime="YYYY-MM-DD"&gt;DD MM&lt;/time&gt;</a> opbouwing.</li>
                 </ul>
 
-        <h3 class="index.html">index.html</h3>
+        <h3>index.html</h3>
             <p><strong>index.html zonder hoofdletter!</strong></p>
             <ul>
                 <li>&lt;!DOCTYPE html&gt; //Zegt aan browser welk document type de rest van het document is.//</li>
@@ -54,7 +57,7 @@
             <p>Alles binnen het body gedeelte wordt weergegeven op de pagina. We gebruiken <em>&lt;body&gt;</em> als opening en <em>&lt;/body&gt;</em> als sluiting.</p>              
             <p>Om ons html bestand te sluiten gebruiken we <em>&lt;/html&gt;</em></p>
 
-        <h3 class="lijsten">Lijsten</h3>
+        <h3>Lijsten</h3>
             <p>Er zijn verschillende elementen om een opsomming te maken:</p>
                 <ul>
                     <li>&lt;ul&gt; <em>unorderd list</em></li>
@@ -72,10 +75,41 @@
                             <dt>Binnen deze lijst wordt het element &lt;dt&gt; <strong>EN</strong> &lt;dd&gt; toegevoegd.</dt>
                         </ul>
                 </ul>
+        <h3>Figure</h3>
+            <ul>
+                <li>Bepaalt punt van je inhoud wilt illustreren.</li>
+                <li>Kan afbeelding, video, code, tekst, tabel, ... bevatten.</li>
+                <li>Bekijk het als een deeltje dat op zichzelf kan staan.</li>
+                <li>In een &lt;figure&gt;&lt;/figure&gt; komt typisch een &lt;figcation&gt; voor.</li>
+                    <ul>
+                        <li>Een bijschrift dat wat uitleg kan bevatten (bv bronvermelding)</li>
+                    </ul>
+            </ul>
 
-        <h3 class="form">From</h3>
+        <h3>From</h3>
             <p>Met een "From" element kunnen we een formulier maken op onze website. Later wordt het met backend mogelijk om hier informatie van op te slaan.</p>
-            
+        
+
+        </article>
+
+        <h3>De inhoud van de pagina organiseren</h3>
+            <h4>Main</h4>
+                <p>Bevat de hoofdinhoud van de pagina.</p>
+            <h4>Headers en footers</h4>
+                <p>&lt;header&gt; &lt;/header&gt; bevat de inleidende informatie.</p>
+                <p>&lt;footer&gt; &lt;/footer&gt; vindt je tyoisch aan het einde van de pagina of aan het einde van het article/section.</p>
+            <h4>Section en article</h4>
+                <p>Beide zijn erg verwant aan elkaar.</p>
+                <p>&lt;section&gt; &lt;/section&gt; gebruik je om verwante inhoud te groeperen.</p>
+                <p>&lt;article&gt; &lt;/article&gt; doet hetzelfde met als verschil: <em>elementen moeten op zichzelf kunnen staan.</em></p>
+                <p>Bij een section heb je een deel van de informatie, bij article heb je genoeg met het ene wat je gekregen krijgt.</p>
+            <h4>Aside</h4>
+                <p>Groepeert unhoud die geen grote band heeft met de hoofdinhoud van de pagina.</p>
+                <p>Is, zoals hierboven, een blok-element.</p>
+            <h4>Nav</h4>
+                <p>Duidt een belangrijk navigatieblok aan. Bevat meerdere links.</p>
+                
+
             
 
     </main>
