@@ -59,15 +59,36 @@ main {
 
 /* Hiermee worden alle foto's op de website aangepast naar verlangen. */
 .foto {
-    width: 500px;
+    width: 450px;
     height: auto;
     border-radius: 10px;
 }
 
+.fotoklein {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
 
 /* Content voor index.html */
 
 
 /* Content voor html.html */
 
+
+
 /* Content voor css.html */
+
+
+
+/* Content voor javascript.html */
+
+article .codeObject {
+    display: block;
+    overflow: auto;
+    padding: 5px; 
+    background-color: black;
+    color: aliceblue;
+    border: 3px solid black;
+    border-radius: 10px;
+}
