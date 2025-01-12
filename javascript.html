@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="dom.js" defer></script>
+    <script src="javascript.js" defer></script>
     <title>Uitleg JavaScript</title>
 </head>
 <body>
@@ -21,10 +23,9 @@
 
     <main>
         <section id="Inhoudstabel">
-        
-
-
-
+            <ul>
+                <li><a href="#testenJS">TestenJS</a></li>
+            </ul>
         </section>
              
         <h2 id="UitlegJS">Uitleg JavaScript</h2>
@@ -33,6 +34,7 @@
                 <li>&lt;script src="file.js" defer&gt;&lt;/script&gt; - in &lt;head&gt; linken van de .html file.</li>
                 <li>Volgorde van importeren is belangrijk. <em>bv: functies oproemen uit farm.js die gedifiniëerd staan in dom.js.</em></li>
                 <li>//Commentaar schrijven in JS.</li>
+                <li>/*Commentaar schrijven in JS*/</li>
             </ul>
         
         <article class="uitlegjs">
@@ -71,7 +73,7 @@
                                 <li>const myName = 'John';</li>
                                 <li>myName = "Lana"; ==> <strong>error</strong></li>
                             </ul>
-                        <li>Liever <em>const</em> gebruiken dan <em>let</em> --&gt; resultaat is een mooiere code. <em>je can datatypes in JS veranderen met een nieuwe assignment, kan dus onverwachte resultaten geven.</em></li>
+                        <li>Liever <em>const</em> gebruiken dan <em>let</em> --&gt; resultaat is een mooiere code. <em>je kan datatypes in JS veranderen met een nieuwe assignment, kan dus onverwachte resultaten geven.</em></li>
                     </ul>
             <h3>Datatypes</h3>
                 <p>Varible types</p>
@@ -167,7 +169,10 @@
 
 
 
-
+        <h2 id="testenJS">TestenJS</h2>
+            <div id="status"></div>
+            <p>Hieronder kan je zien hoe je een variabelen kan veranderen van een const.</p>
+                <img class="foto" src="img/animalchange.png" alt="hoe bv naam veranderen in const">
 
 
     </main>
