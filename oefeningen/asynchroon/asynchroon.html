@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Asynchroon / synchroon</h1>
+    <script>
+        console.log("Start");
+        let a = 1;
+        console.log(`a = ${a}`);
+        a++;
+        setTimeout(() => {      //Callback function = heeft andere functie als parameter. ==> meeste zijn asynchroon
+            a++
+            console.log(`In de eerste timeout is a = ${a}`)
+        }, 1000); //Wacht 1000 seconde en voer dan deze functie uit
+        console.log(`a tweede keer = ${a}`);
+        console.log("Einde");
+    </script>
+</body>
+</html>

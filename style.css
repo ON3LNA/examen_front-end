@@ -55,6 +55,8 @@ main {
     border:  3px solid rgb(136, 117, 161);
     border-radius: 25px;
     overflow: auto;
+    flex-shrink: 0;
+    flex-wrap: wrap; /*AANPASSEN*/
 }
 
 /* Hiermee worden alle foto's op de website aangepast naar verlangen. */
@@ -68,6 +70,11 @@ main {
     width: 600px;
     height: auto;
     border-radius: 10px;
+}
+
+.link {
+    color: black;
+    text-decoration: underline;
 }
 
 /* Content voor index.html */
@@ -91,4 +98,16 @@ article .codeObject {
     color: aliceblue;
     border: 3px solid black;
     border-radius: 10px;
+}
+
+.tekst-rechts {
+    text-align: right;
+}
+
+.lijnUit {
+    padding: 5px;
+    border-radius: 3px; 
+    font-size: 17px;
+    background-color: rgb(61, 21, 99);
+    color: aliceblue;
 }
