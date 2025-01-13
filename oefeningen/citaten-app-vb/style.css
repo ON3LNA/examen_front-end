@@ -1,0 +1,50 @@
+header, footer {
+    background-color: rgb(0, 0, 150);
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: flex-end;
+    color: aliceblue;
+    list-style: none;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+footer {
+    padding: 1em;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}
+
+.citaten article {
+    background-color: rgb(255, 255, 238);
+    padding: 1em;
+    box-shadow: 0 0 3px #999;
+    border-radius: var(--afronding);
+    margin-bottom: 1em;
+}
+
+p.auteur {
+    font-style: italic;
+    text-align: right;
+}
+
+p.auteur::before {
+    content: '- '
+}
