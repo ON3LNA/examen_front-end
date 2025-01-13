@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="dom.js" defer></script>
-    <script src="javascript.js" defer></script>
+    <script src="js/dom.js" defer></script>
+    <script src="js/javascript.js" defer></script>
     <title>Uitleg JavaScript</title>
 </head>
 <body>
@@ -23,24 +23,33 @@
 
     <main>
         <section id="Inhoudstabel">
-            <ul>
-                <li><a href="#testenJS">TestenJS</a></li>
-            </ul>
+            <nav>
+                <ol>
+                    <li><a class="link" href="#UitlegJS">Uitleg JavaScript</a></li>
+                    <li><a class="link" href="#uitlegjs">Wat is JavaScript?</a></li>
+                    <li><a class="link" href="#Objects">Objects</a></li>
+                    <li><a class="link" href="#DOM">DOM</a></li>
+                    <li><a class="link" href="#testenJS">TestenJS</a></li>
+                </ol>
+            </nav>
         </section>
              
         <h2 id="UitlegJS">Uitleg JavaScript</h2>
+            <p>Beschrijft gedrag van de website.</p>
             <ul>
                 <li>"Defer" toevoegen helpt de website het JS tegoei uit te voeren. Defer zorgt er voor dat het script pas zordt uitgevoerd wanneer de hele pagina geladen is.</li>
                 <li>&lt;script src="file.js" defer&gt;&lt;/script&gt; - in &lt;head&gt; linken van de .html file.</li>
                 <li>Volgorde van importeren is belangrijk. <em>bv: functies oproemen uit farm.js die gedifiniëerd staan in dom.js.</em></li>
                 <li>//Commentaar schrijven in JS.</li>
                 <li>/*Commentaar schrijven in JS*/</li>
+                <li>`inhoud van varibelen inpluggen`</li>
+                <li>Handige <a class="link" href="https://javascript.info/">website</a>.</li>
             </ul>
         
         <article class="uitlegjs">
 
             <h3>Wat?</h3>
-                <p>Intro JavaScript van cursus: <a href="pdf/JS intro.pdf">"JS intro"</a></p>
+                <p>Intro JavaScript van cursus: <a class="link" href="pdf/JS intro.pdf">"JS intro"</a></p>
                 <ul>
                     <li>Cross-platvorm programmeer taal.</li>
                     <li>Supported bij alle browsers.</li>
@@ -108,7 +117,7 @@
                                 <li>3 === '3' --&gt; false</li>
                                 <li>3 !== '3' --&gt; true</li>
                             </ul>
-                            <p>Meer informatie op <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality">deze</a> site.</p>
+                            <p>Meer informatie op <a class="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality">deze</a> site.</p>
                         <li>if / then / else</li>
                             <img class="foto" src="img/if.else.js.png" alt="screenshot van de ppt van lrk">
                         <li>logical Operators</li>
@@ -116,7 +125,7 @@
                                 <li>&& = and</li>
                                 <li>|| = or</li>
                             </ul>
-                            <p>Meer informatie over operators: <a href="https://www.w3schools.com/js/js_comparisons.asp">w3schools</a></p>
+                            <p>Meer informatie over operators: <a class="link" href="https://www.w3schools.com/js/js_comparisons.asp">w3schools</a></p>
                         <li>Ternary operator</li>
                             <p>Andere / kortere manier voor if/else:</p>
                             <p>console.log(myAge &lt; 18 ? 'Child' : 'Adult'); </p>
@@ -136,7 +145,7 @@
                 </ul>
                 <p>Gebruik Javascript als functionele taal. Je kan veel met functies doen bv toewijze aan variabelen, parameters...</p>
             
-            <h3>Objects</h3>
+            <h3 id="Objects">Objects</h3>
                 <ul>
                     <li>Declaring and using objects</li>
                         <img class="foto" src="img/declearing.objects.js.png" alt="declearing objects ppt lrk">
@@ -155,7 +164,7 @@
                     <li>Je kan een object in een ander object stoppen. Dit is een <strong>geneste</strong> object.</li>
                     <code class="codeObject">let gebruiker = { naam: 'Jan', adres: {straat: 'Kerkstraat', nummer: 12 } }</code>
                 </ul>
-                <p>Meer informatie kan je <a href="pdf/Objects.pdf">hier</a> vinden.</p>
+                <p>Meer informatie kan je <a class="link"  href="pdf/Objects.pdf">hier</a> vinden.</p>
             
             <h3>Array</h3>
                 <ul>
@@ -163,8 +172,49 @@
                     <li>tussen [] gescheiden met ,</li>
                     <li>lijst van citaten</li>
                 </ul>
-                <p>Meer informatie over <a href="pdf/Array methods.pdf">array's</a>.</p>
+                <p>Meer informatie over <a class="link"  href="pdf/Array methods.pdf">array's</a>.</p>
             
+            <h3 id="DOM">DOM</h3>
+                <p><em>"Document Object Model</em></p>   
+                <ul>
+                    <li>Interactief maken van websites</li>
+                    <li>html en xml</li>
+                        <ul>
+                            <li>HTML elementen: div, p, button, ...</li>
+                            <li>Attributen van deze elementen: id, class, scr, ...</li>
+                            <li>Tekst tussen HTML elementen: inhoud in &lt;p&gt; tag</li>
+                        </ul>
+                    <li>DOM manipulatie?</li>
+                        <ol>
+                            <li></li>
+                        </ol>
+                </ul> 
+                <p>Meer informatie kan je <a class="link"  href="pdf/DOM.pdf">hier</a> vinden.</p>
+
+            <h3>Events</h3>
+                <h4>Oude manier:</h4>
+                    <ol>
+                        <li>HTML-atribuut</li>
+                            <ul>
+                                <li>Combinatie van HTML, CSS, JS</li>
+                            </ul>
+                        <li>DOM-eigenschap</li>
+                            
+                    </ol>
+                <h4>Nieuwe manier</h4>
+            
+                <p>Meer informatie kan je <a class="link" href="pdf/Hoofstuk JS events.pdf">hier</a> vinden.</p>
+        </article>
+
+        <article id="NodeJS">
+            <h3>NodeJS</h3>
+                <p>Opstarten van npm:</p>
+                    <ul>
+                        <li>npm install</li>
+                        <li>npm start</li>
+                        <li>--&gt; <a class="link" href="http://localhost:3000/#/">localhost:3000/#/</a></li>
+                    </ul> 
+                   
         </article>
 
 
@@ -173,6 +223,12 @@
             <div id="status"></div>
             <p>Hieronder kan je zien hoe je een variabelen kan veranderen van een const.</p>
                 <img class="foto" src="img/animalchange.png" alt="hoe bv naam veranderen in const">
+            
+            <h3>Oude manier</h3>
+                <p id="alineUitlijning">Bij wijze van voorbeeld maken we een knop die … onderaan.</p>
+                <button class="lijnUit" onclick="lijnUit()">Lijn alinea hierboven rechts / links uit</button>
+            
+            <h3>Nieuwe manier</h3>
 
 
     </main>
