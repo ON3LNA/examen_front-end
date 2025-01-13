@@ -9,7 +9,7 @@ body /*alles hier in wordt toegepast op de volledige body*/ {
     color: black; /*Dit maakt de tekst kleur zwart. */
     text-decoration: none; /*Dit zorgt ervoor dat er geen tekst underlined is of van die dingen*/
     font-size: 18px;
-    font-family: sans-serif;
+    font-family: Arial;
 }
 
 
@@ -86,7 +86,20 @@ main {
 
 /* Content voor css.html */
 
+#pdfCSS nav {
+    background-color: rgb(121, 176, 240);
+    box-shadow: 0 0 3 0;
+    border-radius: 5px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+}
 
+article .linkPdf {
+    color: rgb(85, 79, 72);
+
+}
 
 /* Content voor javascript.html */
 
@@ -100,6 +113,21 @@ article .codeObject {
     border-radius: 10px;
 }
 
+#pdfJS nav {
+    background-color: rgb(121, 176, 240);
+    box-shadow: 0 0 3 0;
+    border-radius: 5px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+}
+
+article .linkPdf {
+    color: rgb(85, 79, 72);
+
+}
+
 .tekst-rechts {
     text-align: right;
 }
@@ -111,3 +139,6 @@ article .codeObject {
     background-color: rgb(61, 21, 99);
     color: aliceblue;
 }
+
+
+
